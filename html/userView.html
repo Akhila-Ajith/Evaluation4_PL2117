@@ -1,0 +1,124 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/topIcon.css">
+    <link rel="stylesheet" href="/css/navBar.css">
+    <link rel="stylesheet" href="/css/logOut.css">
+
+</head>
+
+<body>
+    <h1>TRAVEL REQUESTOR</h1>
+
+    <div class="topTags">
+
+        <a href="./login.html">
+            <button>Logout</button>
+            <img src="avatar.png" alt="Your Image" id="topRightImage">
+            <br>
+        </a>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#">Brand</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#"> Form </a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> View Request </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./allData.html"> All</a></li>
+                            <li><a class="dropdown-item" href="#"> Critical </a></li>
+                            <li><a class="dropdown-item" href="#"> Normal </a></li>
+                            <li><a class="dropdown-item" href="#"> Rejected </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div> <!-- navbar-collapse.// -->
+        </div> <!-- container-fluid.// -->
+    </nav>
+    <div class="form-row mt-4">
+        <div class="form-group col-md-6">
+            <label for="empId">Employee ID:</label>
+            <input type="text" class="form-control" id="empId" name="empId">
+            <span id="empIdError" style="color: red;" class="error"></span>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="empName">Employee Name:</label>
+            <input type="text" class="form-control" id="empName" name="empName">
+            <span id="empNameError" style="color: red;" class="error"></span>
+        </div>
+    </div>
+
+    <!-- Form Fields -->
+    <form id="travelForm">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="project">Project:</label>
+                <input type="text" class="form-control" id="project" name="project">
+                <span id="projectError" style="color: red;" class="error"></span>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="cause">Cause for Travel:</label>
+                <input type="text" class="form-control" id="cause" name="cause">
+                <span id="causeError" style="color: red;" class="error"></span>
+            </div>
+        </div>
+        <form id="travelForm">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="source">Source:</label>
+                    <input type="text" class="form-control" id="source" name="source">
+                    <span id="sourceError" style="color: red;" class="error"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="destination">Destination</label>
+                    <input type="text" class="form-control" id="destination" name="destination">
+                    <span id="destinationError" style="color: red;" class="error"></span>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="fromDate1">From Date 1:</label>
+                    <input type="date" class="form-control" id="fromDate1" name="fromDate1">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="fromDate2">From Date 2:</label>
+                    <input type="date" class="form-control" id="fromDate2" name="fromDate2">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="noOfDays">Number of Days:</label>
+                    <input type="number" class="form-control" id="noOfDays" name="noOfDays" readonly>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="modeOfTravel">Mode of Travel:</label>
+                    <select class="form-control" id="modeOfTravel" name="modeOfTravel">
+                        <option value="Air">Air</option>
+                        <option value="Train">Train</option>
+                        <option value="Bus">Bus</option>
+
+                        <option value="Car">Car</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        </div>
+        <script src="/js/userView.js"></script>
+</body>
+
+</html>

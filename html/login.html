@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/login.css">
+
+</head>
+<script>
+    window.history.forward();
+</script>
+
+<body>
+
+    <div class="container customContainer">
+
+        <!-- Login Section -->
+        
+        <h2>TRAVEL REQUESTOR</h2>
+        <form id="loginForm">
+            <!-- username -->
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" class="form-control">
+                <span id="usernameError" style="color: red;"></span>
+            </div>
+            <!-- password -->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="form-control">
+                <span id="passwordError" style="color: red;"></span>
+            </div>
+            <!-- submit button -->
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+
+    </div>
+    <script src="/js/login.js">
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+#topRightImage {
+    position: absolute;
+    top: 5px; 
+    right: 10px; 
+    max-width: 50px; 
+    z-index: 1; 
+}
